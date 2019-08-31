@@ -9,23 +9,57 @@
     <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="script.js"></script>
     <title>Weather APP</title>
 </head>
 
 <body>
 
-    <section>
+    <section id="first">
         <div class="overlay">
             <div class="container">
                 <h1>Weather App</h1>
                 <div id="search">
                     <input type="text" placeholder="enter city to find weather">
+                   
                     <i class="fas fa-search"></i>
                 </div>
-                <button id="srh-btn"> click to search </button>
+                <button id="srh-btn" onclick="getData()"> click to search </button>
+                <h2 class="condition"></h2>
             </div>
         </div>
+    </section>
+    <section id="second">
+        <div class="overlay">
+            <div class="information">
+                <img class="icon">
+                <img class="bc">
+                <div class="main">
+                    <h1>main</h1>
+                    <div class="parameter">
+                        <div id="presure">
+                            <h2>Presure</h2>
+                            <p>condition </p>
+
+                        </div>
+                        <div id="humidity">
+                            <h2>Humidity</h2>
+                            <p>condition</p>
+
+                        </div>
+                        <div class="temperature">
+                            <h2>Temperature</h2>
+                            <p>condition</p>
+
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
     </section>
 
 </body>
