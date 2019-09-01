@@ -26,35 +26,36 @@
                     <i class="fas fa-search"></i>
                 </div>
                 <button id="srh-btn" onclick="getData()"> click to search </button>
-                <h2 class="condition"></h2>
+               
             </div>
         </div>
     </section>
     <section id="second">
         <div class="overlay">
             <div class="information">
-                <img class="icon">
-                <img class="bc">
+               <div class="image"><img class="icon" ></div>
+               
                 <div class="main">
-                    <h1>main</h1>
+                    <h1></h1>
                     <div class="parameter">
-                        <div id="presure">
-                            <h2>Presure</h2>
-                            <p>condition </p>
+                        <div class="temp">
+                            <h2 class="pra-head">temperature</h2>
+                            <p class="pra-content" id="temp"> </p>
 
                         </div>
-                        <div id="humidity">
-                            <h2>Humidity</h2>
-                            <p>condition</p>
+                        <div class="humidity">
+                            <h2 class="pra-head" >Humidity</h2>
+                            <p class="pra-content"  id="humidity"></p>
 
                         </div>
-                        <div class="temperature">
-                            <h2>Temperature</h2>
-                            <p>condition</p>
+                        <div class="wind">
+                            <h2 class="pra-head">Wind</h2>
+                            <p class="pra-content" id="wind"></p>
 
                         </div>
                         
                     </div>
+                    <button id="go-back" onclick="goBack()">go back</button>
                 </div>
             </div>
 

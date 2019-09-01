@@ -1,17 +1,21 @@
 body{
  
-    margin:0;
-    padding:0;
-  width:100%;
+    
+ width:100%;
+ margin:0;
+ padding:0;
  
 }
 #first{
+  background-image: url("images/background.gif");
+}
+#first, #second{
   
- background-image: url("images/background.gif");
+
     background-repeat: no-repeat;
     background-size:cover ;
     background-position:center center;
- 
+
 
  
 }
@@ -58,7 +62,7 @@ h1{
 #search i{
   font-size:40px;
 }
-#srh-btn{
+#srh-btn,#go-back{
   padding:20px;
   margin:10px;
   background-color:red;
@@ -76,12 +80,143 @@ transition: 1s;
  
   cursor: pointer;
 }
-#second{
-  display:block;
-}
 .information{
-  display:flex;
+  display:none;
   flex-direction: column;
+  justify-content: center;
+ align-items:  center;
+width:100%;
+  height:100vh;
+}
+
+.information .image{
+ display:block;
+ text-align: center;
+ 
+ border-radius: 100%;
+
+}
+.information .image img{
+  width:100%;
+  border-radius: 100%;
+  background-color: #fff;
+  border:1px solid black;
+  
+
+
+
+}
+.main{
+  width:100%;
+  display: flex;
+  flex-direction: column;
+  height:100vh ;
+  justify-content: space-between;
+  align-items: center;
+}
+.parameter{
+  width:100%;
+  
+  display:flex;
+  justify-content: space-evenly;
+  text-align: center;
+
+}
+.temp,.humidity,.wind{
+  display: flex;
+  
+  flex-direction: column;
+  justify-content: space-between;
+ 
+  border:2px solid black;
+  border-radius: 2px;
+ 
+
+}
+.pra-head{
+  border-bottom: 5px solid black;
+  padding:10px;
+  text-transform: capitalize;
+  font-family: 'Lobster', cursive;
+  background-color: black;
+  color:white;
+  margin-top:0;
+
+}
+.pra-content{
+  padding:10px;
+  font-size: 30px;
+  font-weight: bold;
+  background-color: black;
+  color:red;
+  margin-bottom:0;
+}
+
+#go-back:hover{
+  background-color: black;
+  color:white;
+ 
+  cursor: pointer;
+}
+@media all and (max-width:600px){
+  .information .image{
+    margin-top:10px;
+  }
+  .information .image img{
+    width:50%;
+    
+  }
+  .parameter{
+    flex-direction: column;
+    align-items: center;
+  }
+  .temp,.humidity,.wind{
+    width:50%;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  #go-back{
+padding:5px;
+margin-bottom:none;
+margin-top:5px;
+  }
+  h1{
+    font-size:40px;
+  }
+  
+}
+@media all and (max-width:400px) {
+  .information{
+    width:100%;
+    height:100%;
+  }
+  .information .image{
+    margin-top:5px;
+  }
+  .information .image img{
+    width:50%;
+    
+  }
+  .parameter{
+    width:50%;
+    flex-direction: column;
+    align-items: center;
+  }
+  .temp,.humidity,.wind{
+    width:100%;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  #go-back{
+padding:3px;
+margin-bottom:none;
+margin-top:3px;
+
+  }
+  h1{
+    font-size:30px;
+  }
+  
 }
 
 
