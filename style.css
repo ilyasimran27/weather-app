@@ -169,7 +169,7 @@ width:100%;
     margin-top:10px;
   }
   .information .image img{
-    width:50%;
+    width:100%;
     
   }
   .parameter{
@@ -187,7 +187,7 @@ margin-bottom:none;
 margin-top:5px;
   }
   h1{
-    font-size:40px;
+    font-size:50px;
   }
   
 }
@@ -207,7 +207,7 @@ margin-top:5px;
     margin-top:5px;
   }
   .information .image img{
-    width:50%;
+    width:100%;
     
   }
   .parameter{
@@ -227,7 +227,7 @@ margin-top:3px;
 
   }
   h1{
-    font-size:30px;
+    font-size:50px;
   }
   
 }
